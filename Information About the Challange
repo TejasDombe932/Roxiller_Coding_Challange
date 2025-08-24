@@ -1,0 +1,141 @@
+Create and add the README (sequential)
+
+Open terminal in your project root
+
+cd C:\Users\GOURAV\Desktop\Roxiller
+
+
+Create the file and open it
+
+Easiest on Windows:
+
+notepad README.md
+
+
+(Click Yes to create if prompted.)
+
+Paste the README content (given below) into README.md, then save & close Notepad.
+
+Stage the file
+
+git add README.md
+
+
+Commit
+
+git commit -m "Add README with run instructions"
+
+
+Push to GitHub
+
+git push origin main
+
+
+Done ✅ Your README will show up on the repo homepage.
+
+2) Paste this README content
+# Roxiller Full-Stack App
+
+React (Frontend) + NestJS (Backend) + MySQL.  
+Features: User **registration & login**, static **admin login**, role-based redirect (Admin/User).
+
+---
+
+## Tech Stack
+- **Frontend:** React + Vite (port 5173)
+- **Backend:** NestJS + TypeORM (port 4000)
+- **DB:** MySQL
+
+## Folder Structure
+
+
+Roxiller/
+├─ Frontend/ # React app
+└─ backend/ # NestJS app
+
+
+---
+
+## Prerequisites
+- Node.js & npm
+- MySQL Server (and Workbench optional)
+- Git
+
+---
+
+## Database Setup (MySQL)
+1. Start MySQL.
+2. Create a database (example):
+   ```sql
+   CREATE DATABASE roxiller_db;
+
+
+Make sure your NestJS TypeORM config points to this DB with correct user/password.
+
+Default static admin (as implemented):
+Email: admin@example.com
+Password: admin123
+
+Backend (NestJS) – Run
+
+Open a terminal:
+
+cd backend
+npm install
+
+
+Ensure src/app.module.ts TypeORM config has your DB credentials (host, port, username, password, database).
+
+Start the server:
+
+npm run start:dev
+
+
+Server runs at http://localhost:4000
+
+API Endpoints
+
+POST /auth/register – Register user { name, email, password }
+
+POST /auth/login – User login { email, password }
+
+POST /admin/login – Admin login { email, password }
+
+Frontend (React) – Run
+
+Open another terminal:
+
+cd Frontend
+npm install
+npm run dev
+
+
+App runs at http://localhost:5173
+
+The frontend calls the backend:
+
+Registration → http://localhost:4000/auth/register
+
+User login → http://localhost:4000/auth/login
+
+Admin login (if admin@example.com) → http://localhost:4000/admin/login
+
+Common Issues & Fixes
+
+CORS error: Make sure NestJS has app.enableCors({ origin: 'http://localhost:5173' }).
+
+Port already in use: Stop the other process or change the port.
+
+DB errors: Verify DB name exists and credentials are correct.
+
+Invalid admin login: Use admin@example.com / admin123 (static admin).
+
+Scripts
+
+Backend
+
+npm run start:dev – dev server with watch
+
+Frontend
+
+npm run dev – Vite dev server
