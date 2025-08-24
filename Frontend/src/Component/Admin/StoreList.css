@@ -1,0 +1,21 @@
+.store-list {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.store-list table {
+  width: 100%;
+  border-collapse: collapse; /* fixed missing brace */
+}
+
+.store-list th, 
+.store-list td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.store-list th {
+  background: #e2e8f0;
+}

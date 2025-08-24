@@ -1,0 +1,31 @@
+.taskbar {
+  width: 220px;
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskbar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.taskbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.taskbar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.taskbar ul li:hover {
+  background: #0056b3;
+}

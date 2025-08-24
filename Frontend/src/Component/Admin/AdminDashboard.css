@@ -1,0 +1,50 @@
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  margin: 8px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background: #334155;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #1c7cea;
+  overflow-y: auto;
+}
+
+.dashboard-home {
+  text-align: center;
+  margin-top: 100px;
+}

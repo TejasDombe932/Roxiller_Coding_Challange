@@ -1,0 +1,19 @@
+.stores{
+  color:black;
+}
+.store {
+  padding: 20px;
+}
+
+.store h2 {
+  color: #333;
+}
+
+.store ul {
+  margin-top: 10px;
+}
+
+.store ul li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}

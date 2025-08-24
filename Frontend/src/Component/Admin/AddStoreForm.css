@@ -1,0 +1,20 @@
+.add-store {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.add-store input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.add-store button {
+  background: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

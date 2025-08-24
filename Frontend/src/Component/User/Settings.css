@@ -1,0 +1,23 @@
+.settings {
+  padding: 20px;
+}
+
+.settings h2 {
+  margin-bottom: 15px;
+}
+
+.settings button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.settings button:hover {
+  background: #0056b3;
+}
